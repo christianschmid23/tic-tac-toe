@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,74 @@
     <link rel="stylesheet" href="style.css">
     <title>Tic Tac Toe</title>
 </head>
+
 <body>
-    
+    <img class="game-over d-none" id="game-over" src="./img/gameOver.jpg" alt="" srcset="">
+    <button class="restart-btn d-none" id="restart-btn" onclick="restart()">Restart</button>
+    <div class="player-panel">
+        <div class="player-inactive" id="player-1">
+            <img class="" src="./img/cat.png"> Player 1
+        </div>
+        <div id="player-2">
+            <img class="" src="./img/mouse.png"> Player 2
+        </div>
+    </div>
+
+    <div id="line-1" class="horizontal-line" style="top: 280px"></div>
+    <div id="line-2" class="horizontal-line" style="top: 420px"></div>
+    <div id="line-3" class="horizontal-line" style="top: 560px"></div>
+    <div id="line-4" class="horizontal-line make-vertical" style="top: 420px"></div>
+    <div id="line-5" class="horizontal-line make-vertical" style="top: 420px; left: 455px"></div>
+    <div id="line-6" class="horizontal-line make-vertical" style="top: 420px; left: 735px"></div>
+    <div id="line-7" class="horizontal-line" style="transform: rotate(45deg) scaleX(0.0);; top: 420px; left: 535px; width: 470px !important"></div>
+    <div id="line-8" class="horizontal-line" style="transform: rotate(135deg) scaleX(0.0);; top: 420px; left: 535px; width: 470px !important"></div>
+
+
+    <table>
+        <tr>
+            <td onclick="fillShape(0)">
+                <img class="shape d-none" id="cat-0" src="./img/cat.png">
+                <img class="shape d-none" id="mouse-0" src="./img/mouse.png">
+            </td>
+            <td onclick="fillShape(1)">
+                <img class="shape d-none" id="cat-1" src="./img/cat.png">
+                <img class="shape d-none" id="mouse-1" src="./img/mouse.png">
+            </td>
+            <td onclick="fillShape(2)">
+                <img class="shape d-none" id="cat-2" src="./img/cat.png">
+                <img class="shape d-none" id="mouse-2" src="./img/mouse.png">
+            </td>
+        </tr>
+        <tr>
+            <td onclick="fillShape(3)">
+                <img class="shape d-none" id="cat-3" src="./img/cat.png">
+                <img class="shape d-none" id="mouse-3" src="./img/mouse.png">
+            </td>
+            <td onclick="fillShape(4)">
+                <img class="shape d-none" id="cat-4" src="./img/cat.png">
+                <img class="shape d-none" id="mouse-4" src="./img/mouse.png">
+            </td>
+            <td onclick="fillShape(5)">
+                <img class="shape d-none" id="cat-5" src="./img/cat.png">
+                <img class="shape d-none" id="mouse-5" src="./img/mouse.png">
+            </td>
+        </tr>
+        <tr>
+            <td onclick="fillShape(6)">
+                <img class="shape d-none" id="cat-6" src="./img/cat.png">
+                <img class="shape d-none" id="mouse-6" src="./img/mouse.png">
+            </td>
+            <td onclick="fillShape(7)">
+                <img class="shape d-none" id="cat-7" src="./img/cat.png">
+                <img class="shape d-none" id="mouse-7" src="./img/mouse.png">
+            </td>
+            <td onclick="fillShape(8)">
+                <img class="shape d-none" id="cat-8" src="./img/cat.png">
+                <img class="shape d-none" id="mouse-8" src="./img/mouse.png">
+            </td>
+        </tr>
+    </table>
+
 </body>
+
 </html>
